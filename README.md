@@ -1,6 +1,6 @@
 # Hola HiCode Student!
 
-<h1 align="center"> 1. Simple CSS selectors</h1> 
+<h1 align="center"> 1. CSS</h1> 
 
 ## 1. Universal selector
 El selector universal, también conocido como comodín, selecciona todo, cada elemento del documento.
