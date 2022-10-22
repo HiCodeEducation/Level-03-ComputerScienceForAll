@@ -2,7 +2,11 @@
 
 <h1 align="center"> 1. CSS</h1> 
 
-## 1. Universal selector
+***
+*<h3 align="right">1.1. Selector Universal</h3>*
+
+***
+
 El selector universal, también conocido como comodín, selecciona todo, cada elemento del documento.
 
 Para usar el selector universal, use el carácter de asterisco, *.
@@ -20,7 +24,11 @@ Puede usar el selector universal para restablecer el relleno y el margen predete
     margin:  0;
 }
 ```
-## 2. Type selector
+
+***
+*<h3 align="right">1.2. Type selector</h3>*
+
+***
 
 El selector de tipo CSS selecciona todos los elementos HTML del tipo especificado.
 
@@ -35,14 +43,18 @@ p {
 ```
 El código anterior coincide y selecciona todos los elementos p dentro del documento y les da estilo.
 
-## 3. Class selector
+***
+*<h3 align="right">1.3. Class selector</h3>*
+
+***
+
 El selector de clase hace coincidir y selecciona elementos HTML en función del valor de su clase determinada. Específicamente, selecciona cada elemento en el documento con ese nombre de clase específico.
 
 Con el selector de clases, puede seleccionar varios elementos a la vez y diseñarlos de la misma manera sin copiar y pegar los mismos estilos para cada uno por separado.
 
 Las clases son reutilizables, lo que las convierte en una buena opción para practicar el desarrollo DRY. DRY es un principio de programación y es la abreviatura de 'Don't Repeat Yourself'. Como sugiere el nombre, el objetivo es evitar escribir código repetitivo siempre que sea posible.
 
-Para seleccionar elementos con el selector de clase, utilice el carácter de punto, ., seguido del nombre de la clase.
+Para seleccionar elementos con el selector de clase, utilice el carácter de punto ```.```, seguido del nombre de la clase.
 ```css
 .my_class {
     property: value;
@@ -51,25 +63,35 @@ Para seleccionar elementos con el selector de clase, utilice el carácter de pun
 
 En el código anterior, los elementos con una clase de my_class se seleccionan y se les aplica el estilo correspondiente.
 
+***
+*<h3 align="right">1.4. ID selector</h3>*
 
-## 4. ID selector
+***
+
 El selector de ID selecciona un elemento HTML en función del valor de su atributo de ID.
 
 Tenga en cuenta que la ID de un elemento debe ser única en un documento, lo que significa que solo debe haber un elemento HTML con ese valor de ID dado. No puede usar el mismo valor de ID en un elemento diferente además de ese.
 
-Para seleccionar un elemento con una ID específica, use el carácter hash, #, seguido del nombre del valor de la ID:
+Para seleccionar un elemento con una ID específica, use el carácter hash ```#```, seguido del nombre del valor de la ID:
+
 ```css
 #my_id {
     property: value;
 }
 ```
-El código anterior coincidirá solo con el elemento único con el valor de ID de my_id.
+
+El código anterior coincidirá solo con el **elemento único** con el valor de ID de my_id.
 
 Vale la pena mencionar que es mejor tratar de limitar el uso de este selector y optar por usar el selector de clase en su lugar. La aplicación de estilos mediante el selector de ID no es ideal porque los estilos no son reutilizables.
-## 5. Grouping CSS Selector
+
+***
+*<h3 align="right">1.5. Grouping CSS Selector</h3>*
+
+***
+
 With the grouping selector, you can target and style more than one element at once.
 
-To use the grouping selector, use a comma, , to group and separate the different elements you want to select.
+To use the grouping selector, use a comma```,``` , to group and separate the different elements you want to select.
 
 For example, here is how you would target multiple elements such as divs, ps, and spans all at once and apply the same styles to each of them:
 
@@ -79,7 +101,11 @@ div, p, span {
 }
 ```
 
-## 5. Ejemplos
+***
+*<h3 align="right">1.6. Ejemplo de cómo usar las propiedades</h3>*
+
+***
+
 ```css
 body {
 	background-color: blue;
@@ -88,19 +114,314 @@ img {
 	width: 150px;
 	height: 150px;
 }
+```
 
-color: white;
-font-size: 12pt;
-font-weight: bold;
-text-align: center;
+***
+*<h3 align="right">1.7. Propiedades de texto</h3>*
+
+***
+
+```CSS
+/* Pone color al texto. Puedes escribirlo en formato RGB, hex, keyword */
+color: rgb(255, 0, 0) | #ff6347 | red;
+
+/* Alinea el texto en un elemento */
 text-align: left;
 text-align: right;
-font-family: Comic Sans MS;
+text-align: center;
+text-align: justify;
+
+/* Agrega decoración al texto. Prueba usando 1 de cada uno de los siguientes grupos */
+text-decoration-line: overline;
+text-decoration-line: line-through;
+text-decoration-line: underline;
+text-decoration-line: overline underline;
+
+text-decoration-color: gb(255, 0, 0) | #ff6347 | purple;
+
+text-decoration-style: solid;
+text-decoration-style: double;
+text-decoration-style: dotted;
+text-decoration-style: dashed;
+text-decoration-style: wavy;
+
+text-decoration-thickness: auto;
+text-decoration-thickness: 5px;
+text-decoration-thickness: 25%;
+text-decoration-thickness: 5px;
+
+/* Pero si prefieres puedes poner todo en una sola propiedad */
+text-decoration: underline red double 5px;
+text-decoration: underline red double;
+
+/* Un tip: por defecto los hipervínculos tiene una linea, puedes quitarlo con esta propiedad */
+text-decoration: none;
+
+/* Identa la primera linea del texto en un elemento */
+text-indent: 50px;
+
+/* Especifica el espacio entre los caracteres en un texto */
+letter-spacing: 5px;
+letter-spacing: -2px;
+
+/* Especifica el espacio entre las lineas */
+line-height: 0.8;
+line-height: 1.8;
+
+/* Especifica el espacio entre las palabras */
+word-spacing: 10px;
+word-spacing: -2px;
+
+/* Transforma las letras de un elemento*/
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;
+
+/* Efecto de sobra al texto. Esta dado por: horizontal, vertical, efecto-blur y color */
+text-shadow: 2px 2px;
+text-shadow: 2px 2px red;
+text-shadow: 2px 2px 5px red;
+text-shadow: 2px 2px 4px #000000;
 
 ```
 
-> Referencias:\
-> Este documento es modificado de este [sitio web](https://www.freecodecamp.org/news/css-selectors-cheat-sheet-for-beginners/)
+***
+*<h3 align="right">1.8. Propiedades de lista</h3>*
+
+***
+
+```CSS
+/* Especifica el estilo de cómo quieres que se vean las listas */
+list-style-type: none | disc | circle | square | decimal | decimal-leading-zero | armenian | georgian | lower-alpha | upper-alpha | lower-greek| lower-latin | upper-latin | lower-roman | upper-roman | inherit;
+ul.a {
+  list-style-type: circle;
+}
+ul.b {
+  list-style-type: square;
+}
+ol.c {
+  list-style-type: upper-roman;
+}
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+/*  Si no quieres usar números o figuras. Puedes poner una imagen */
+list-style-image: url('sqpurple.gif');
+
+/*  Especifica dónde poner el marcador de un item de la lista, si fuera o dentro de la lista. Lo notarás mejor si le pones borde a toda la lista.*/
+ul.a {
+  list-style-position: outside;
+}
+ul.b {
+  list-style-position: inside;
+}
+
+/* Puede colocar todo en uno */
+ul {
+  list-style: square inside url("sqpurple.gif");
+}
+
+/* Quieres ver tu lista con colores. Intenta alguna de estas. */
+ol {
+  background: #ff9999;
+  padding: 20px;
+}
+ol li {
+  background: #ffe5e5;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+ul li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}
+```
+
+***
+*<h3 align="right">1.9. Propiedades de borde</h3>*
+
+***
+
+```CSS
+/* Especifica el estilo de tu borde. */
+border-style: dotted;
+border-style: dashed;
+border-style: solid;
+border-style: double;
+border-style: groove;
+border-style: ridge;
+border-style: inset;
+border-style: outset;
+border-style: none;
+border-style: hidden;
+border-style: dotted dashed solid double;
+
+/* Especifica el ancho del borde */
+border-width: thin;
+border-width: medium;
+border-width: thick;
+
+border-width: 5px 20px; /* 5px arriba y abajo, 20px a los costados */
+border-width: 20px 5px; /* 20px arriba y abajo, 5px a los costados */
+border-width: 25px 10px 4px 35px; /* 25px arriba, 10px derecha, 4px abajo and 35px izquierda */
+
+/* Especifica el color del borde */
+border-color: rgb(255, 0, 0) | #ff6347 | red; /* elige una forma de especificar el color y se aplica a todos los bordes */
+border-color: red green blue yellow; /* red arriba, green derecha, blue abajo and yellow izquierda */
+
+/* Puedes especificar un estilo distinto a cada lado */
+border-top-style: dotted;
+border-right-style: solid;
+border-bottom-style: dotted;
+border-left-style: solid;
+
+border-style: dotted solid double dashed; /* dotted arriba, solid derecha, double abajo, dashed izquierda;	
+
+/* Si quieres poner muchas propiedades en una solo linea, sería así. Intentalo en tu código. */
+border: 5px solid red;
+border-left: 6px solid red;
+border-bottom: 6px solid red;
+
+/* ¿Son un poco feos los bordes cuadrados? Intenta esto! */
+border-radius: 5px;
+
+```
+
+***
+*<h3 align="right">1.10. Propiedades de tipografía</h3>*
+
+***
+
+```CSS
+/* Especifica la tipografía del texto. Comience con la fuente que desees y termine con una familia genérica (para permitir que el navegador elija una fuente similar en caso no pueda colocar tu primera opción) */
+font-family: "Times New Roman", Times, serif;
+font-family: Arial, Helvetica, sans-serif;
+font-family: "Lucida Console", "Courier New", monospace;
+
+/* Especifica el tamaño del texto */
+font-size: xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger | un valor en px | % ;
+
+/* Especifica la estilo del texto */
+font-style: normal;
+font-style: italic;
+font-style: oblique;
+
+/* Especifica el grosor del texto */
+font-weight: bold;
+font-weight: normal;
+
+/* Todo en una sola propiedad font */
+font: 20px Arial, sans-serif;
+font: italic small-caps bold 12px/30px Georgia, serif;
+
+/* Si no quieres usar las tipografía por defecto, usa algunas de google*/
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> /* En el archivo HTML */
+body {
+  font-family: "Sofia", sans-serif;
+}
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong"> /* En el archivo HTML */
+body {
+  font-family: "Trirong", serif;
+}
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"> /* En el archivo HTML */
+body {
+  font-family: "Audiowide", sans-serif;
+}
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"> /* Importas las 3 tipografías a la vez. Y puedes usarla por separado */
+font-family: "Audiowide", sans-serif;
+font-family: "Sofia", sans-serif;
+font-family: "Trirong", serif;
+```
+
+***
+*<h3 align="right">1.11. Prueba el siguiente código. Te sorprenderá el resultado!!!</h3>*
+
+***
+
+```HTML
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #ababab;
+}
+</style>
+</head>
+```
+
+```HTML
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1 class="font-effect-fire">Sofia on Fire</h1>
+
+</body>
+```
+
+```HTML
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1 class="font-effect-neon">Neon Effect</h1>
+<h1 class="font-effect-outline">Outline Effect</h1>
+<h1 class="font-effect-emboss">Emboss Effect</h1>
+<h1 class="font-effect-shadow-multiple">Multiple Shadow Effect</h1>
+
+</body>
+```
+
+***
+*<h3 align="right">1.12. Nunca pierdas el buen estilo. Tipografías que convinan.</h3>*
+
+***
+
+* Georgia and Verdana
+* Helvetica and Garamond
+* Merriweather and Open Sans (de Google)
+* Ubuntu and Lora (de Google)
+* Abril Fatface and Poppins (de Google)
+* Cinzel and Fauna One (de Google)
+* Fjalla One and Libre Baskerville (de Google)
+* Space Mono and Muli (de Google)
+* Spectral and Rubik (de Google)
+* Oswald and Noto Sans (de Google)
+
+***
+
+¿Sabías que Steve Jobs llevo un curso de tipografía en la universidad y fue la razón por la que incluyó bonitas tipografias en el computador? [Aprende un poquito más de tipografías haciéndome aquí](https://www.w3schools.com/css/css_font.asp)
+
+> Si quieres conocer alguna propiedad más a detalle: visita este [sitio web](https://www.w3schools.com/css/default.asp)  
+
+***
 
 <h1 align="center"> 2. HTML tags</h1> 
 
@@ -665,3 +986,9 @@ Visita <a href="https://www.hicode.education"> hicode.education</a> !
   <input type="submit" value="Submit">
  </fieldset>
 </form>
+
+> Si quieres conocer algún tag más a detalle o más tags: visita este [sitio web](https://www.w3schools.com/html/default.asp)  
+	
+> Referencias:
+> Parte del documento fue extraido de este [sitio web](https://www.freecodecamp.org/news/css-selectors-cheat-sheet-for-beginners/)
+	
