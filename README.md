@@ -373,7 +373,8 @@ Visita <a href="https://www.hicode.education"> hicode.education</a> !
 ```html
 <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Girl in a jacket" width="250" height="300">
 ```
-```Output:```  Este tag sirve para colocar imágenes en nuestro documento HTML.
+```Output:```  Este tag sirve para colocar imágenes en nuestro documento HTML.  
+
 <img src="https://www.w3schools.com/tags/img_girl.jpg" alt="Girl in a jacket" width="250" height="300">
 
 ***
