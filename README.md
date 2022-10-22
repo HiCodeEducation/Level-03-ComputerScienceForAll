@@ -158,7 +158,8 @@ World
 ```html
 <title> W3Docs - learn HTML, CSS, </title>
 ```
-```Output:```  Define el título o nombre de un documento HTML.
+```Output:```  Define el título o nombre de un documento HTML.  
+	
 ![alt text](https://www.w3docs.com/uploads/media/default/0001/01/7b3d860b4b4b4dabfeae3a12e3229b27339d9e7c.png "Title")
 ***
 
