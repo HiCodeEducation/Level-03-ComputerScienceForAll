@@ -950,9 +950,7 @@ Visita <a href="https://www.hicode.education"> hicode.education</a> !
 ```html
 <button type="button" onclick="alert('Hello world!')">Click Me!</button>
 ```
-```Output:```  Un botón en el que se puede hacer clic.  
-
-<button type="button" onclick="alert('Hello world!')">Click Me!</button>
+```Output:```  Un botón en el que se puede hacer clic. También puedes ver esta [página](https://getcssscan.com/css-buttons-examples?ref=beautifulboxshadow-bottom).
 
 ***
 
