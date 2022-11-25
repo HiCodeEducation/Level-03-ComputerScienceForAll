@@ -294,6 +294,8 @@ border-bottom: 6px solid red;
 border-radius: 5px;
 
 ```
+¿Buscando efectos de sombras? Ingresa [aquí](https://getcssscan.com/css-box-shadow-examples)
+
 
 ***
 *<h3 align="right">1.10. Propiedades de tipografía</h3>*
